@@ -1,0 +1,31 @@
+{
+  "name": "laravel-dashboard-kit/media",
+  "authors": [
+    {
+      "name": "Amr Khaled",
+      "email": "i@akhaled.com"
+    }
+  ],
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "LDK\\Media\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "LDK\\Media\\Tests\\": "tests"
+    }
+  },
+  "require": {
+    "php": "^8.0"
+  },
+  "require-dev": {
+    "nunomaduro/collision": "^6.2",
+    "orchestra/testbench": "^7.0"
+  },
+  "scripts": {
+    "test": "vendor/bin/testbench package:test"
+  }
+}
