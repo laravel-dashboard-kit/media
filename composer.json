@@ -10,7 +10,8 @@
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "LDK\\Media\\": "src/"
+      "LDK\\Media\\": "src/",
+      "LDK\\Media\\Database\\Factories\\": "database/factories/"
     }
   },
   "autoload-dev": {
