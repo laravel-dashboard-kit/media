@@ -1,7 +1,12 @@
 # Laravel dashboard kit Media
 
+## Installation
+
+```sh
+composer require laravel-dashboard-kit/media
+```
+
 ## Roadmap
 
-- [ ] Create migration and model
-- [ ] HasMedia trait
 - [ ] Helper methods
+- [ ] Doc usage

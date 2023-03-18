@@ -13,6 +13,8 @@ class Media extends Model
 {
     use HasFactory, SoftDeletes, HasUuids;
 
+    protected $table = 'medias';
+
     protected $fillable = ['mediable_id', 'mediable_type', 'file_name', 'disk', 'type'];
 
     public static function booted()
