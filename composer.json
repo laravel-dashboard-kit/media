@@ -12,7 +12,10 @@
     "psr-4": {
       "LDK\\Media\\": "src/",
       "LDK\\Media\\Database\\Factories\\": "database/factories/"
-    }
+    },
+    "files": [
+      "helpers.php"
+    ]
   },
   "autoload-dev": {
     "psr-4": {

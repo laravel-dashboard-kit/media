@@ -8,6 +8,14 @@ use LDK\Media\Models\Media;
 
 trait HasMedia
 {
+    public static function bootHasMedia()
+    {
+        static::deleting(function (self $model) {
+            $model->medias
+                ->each(fn (Media $media) => $media->delete);
+        });
+    }
+
     //----------- Relationships
 
     public function medias(): MorphMany
@@ -33,7 +41,7 @@ trait HasMedia
         return $this->medias->where('type', $type);
     }
 
-    public function getMediasUrlAttribute()
+    public function getMediaUrlsAttribute()
     {
         return $this->medias->pluck('file_url');
     }
